@@ -1,6 +1,6 @@
 require "defines"
 
-game.on_event(defines.events.on_chunk_generated, function(event)
+script.on_event(defines.events.on_chunk_generated, function(event)
 	local distX = math.abs(event.area.left_top.x)
 	local distY = math.abs(event.area.left_top.y)
 	local mult = 1 + (math.floor(math.sqrt((distX * distX) + (distY * distY))) / 3500)
