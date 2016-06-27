@@ -1,4 +1,3 @@
-require "defines"
 
 script.on_event(defines.events.on_chunk_generated, function(event)
 	local distX = math.abs(event.area.left_top.x)
